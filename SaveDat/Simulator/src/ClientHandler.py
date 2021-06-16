@@ -150,7 +150,7 @@ class ClientHandler:
         dis = []
         for p1,p2 in zip(pts1, pts2):
             dis.append(haversine(p1, p2,unit=Unit.METERS))
-        if np.median(dis) <= 20:
+        if np.median(dis) <= 10:
             return True
         return False
 
